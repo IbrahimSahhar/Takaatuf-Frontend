@@ -1,0 +1,234 @@
+﻿/* filepath: src/styles/globals.css */
+/* =========================
+   Topbar
+========================= */
+
+.topbar {
+  background-color: #ffffff;
+}
+
+/* Logo square */
+.topbar-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: var(--bs-primary);
+}
+
+/* Brand text */
+.topbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--bs-primary);
+}
+
+
+
+/* =========================
+   Login Page
+========================= */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem; 
+  background-color: #f8fafc;
+  min-height: calc(100vh - 140px);
+}
+
+.login-page__center {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.login-page__card {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 460px;
+}
+
+/* =========================
+   Login Card
+========================= */
+
+.login-card {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Login Form
+========================= */
+
+.login-label {
+  font-size: 14px;
+}
+
+.login-field {
+  position: relative;
+}
+
+/* Icon inside the input (no separate box) */
+.login-field__icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #111827;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Input */
+.login-input {
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #d7dce3;
+  box-shadow: none;
+  padding-left: 44px; /* space for icon */
+}
+
+.login-input:focus {
+  box-shadow: none;
+  border-color: #6366f1;
+}
+
+/* Make bootstrap invalid state still keep our radius/height */
+.login-input.is-invalid {
+  border-radius: 12px;
+}
+
+/* Forgot password link */
+.login-forgot {
+  font-size: 13px;
+  color: #111827;
+}
+
+.login-forgot:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.login-submit {
+  height: 44px;
+  border-radius: 12px;
+}
+
+/* =========================
+   OAuth Buttons
+========================= */
+
+.oauth-btn {
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #d7dce3;
+  background: #ffffff;
+  color: #111827;
+}
+
+.oauth-btn:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #111827;
+}
+.oauth-btn:hover {
+
+  color: #111827;
+}
+
+.oauth-btn__text {
+  font-size: 14px;
+}
+
+/* =========================
+   Footer
+========================= */
+.footer{
+  margin-bottom: 0
+}
+.footer-link {
+  color: #111827;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+/* تثبيت حاوية الحقل */
+.login-field-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* تثبيت الأيقونة بشكل مطلق */
+.login-field__icon-fixed {
+  position: absolute;
+  left: 12px;
+  top: 11px; /* تم ضبطها لتتوسط حقل الإدخال */
+  z-index: 5;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  pointer-events: none; /* لكي لا تعيق النقر على الحقل */
+}
+
+/* إزاحة النص لليمين لكي لا يغطي الأيقونة */
+.login-input-with-icon {
+  padding-left: 42px !important;
+  height: 45px; /* ارتفاع موحد كما في التصاميم */
+  border-radius: 8px !important;
+}
+
+/* منع تحرك رسالة الخطأ للأيقونة */
+.invalid-feedback {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb; /* أو لون من ألوان الهوية الخاصة بك */
+  padding: 1rem;
+}
+
+.login-page__content {
+  width: 100%;
+  max-width: 500px; /* الحجم المثالي لبطاقة تسجيل الدخول */
+}
+
+/* في ملف الـ CSS الخاص بك */
+.sidebar {
+  width: 250px; /* العرض الذي تريده */
+  transition: width 0.3s ease; /* لإضافة نعومة عند التغيير */
+}
+
+/* في ملف App.css أو Dashboard.css */
+.card.rounded-4 {
+  border-radius: 12px !important;
+}
+
+.table thead th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  font-weight: 600;
+  border-bottom-width: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.table tbody td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-color: #f8f9fa;
+}
+
+.btn-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
